@@ -1,15 +1,17 @@
 #include <stdio.h>
 int main ()
 {
-  printf("Hello World!");
-
-
-  printf("FIZ ISSO\n");//tiago
-
-  printf("TESTANDO\n");//weder
-
-  printf("apaguei e mudei\n")//weder
-
-  // comentario novo
+  int i, n;
+  int f = 1;
+ 
+  scanf("%d", &n);
+ 
+  for (i = n; i > 1; i--)
+  {
+      f = f * i;
+  }
+    
+  printf("%d! = %d", n, f);
+ 
   return 0;
 }
