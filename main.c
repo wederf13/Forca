@@ -9,5 +9,7 @@ int main ()
   printf("TESTANDO\n");//weder
 
   printf("apaguei e mudei\n")//weder
+
+  // comentario novo
   return 0;
 }
