@@ -8,6 +8,6 @@ int main ()
 
   printf("TESTANDO\n");//weder
 
-  printf("Qualquer coisa q eu escrever muda ai");
+  printf("apaguei e mudei\n")//weder
   return 0;
 }
