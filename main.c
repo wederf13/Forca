@@ -4,7 +4,9 @@ int main ()
   int i, n;
   int f = 1;
   scanf("%d", &n);
- 
+
+// foi alterado
+  
   for (i = n; i > 1; i--)
   {
       f = f * i;
