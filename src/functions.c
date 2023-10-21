@@ -47,19 +47,19 @@ void display_hangman(int mistakes)
   if (mistakes >= 1)
     strcpy(hangman[2], "  |               O");
 	  
-  else if (mistakes >= 2)
+  if (mistakes >= 2)
     strcpy(hangman[3], "  |               |");
 
-  else if (mistakes >= 3)
+  if (mistakes >= 3)
     strcpy(hangman[3], "  |              /|");
   
-  else if (mistakes >= 4)
+  if (mistakes >= 4)
     strcpy(hangman[3], "  |              /|\\");
 
-  else if (mistakes >= 5)
+  if (mistakes >= 5)
     strcpy(hangman[4], "  |              /");
 
-  else if (mistakes >= 6)
+  if (mistakes >= 6)
     strcpy(hangman[4], "  |              / \\");
 
   for (int i = 0; i < 7; i++)
