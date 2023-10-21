@@ -37,15 +37,15 @@ void choose_word(int level, int theme, char word[50])
   char normal_places[5][20] = {"dce", "draco", "reitoria", "emac", "fav"
   cahr hard_places[5][20] = {""}
   
-  // programming language list
+  // programming languages list
   char easy_langs[5][20] = {"c", "python", "javascript", "java", "cplusplus"};
   char normal_langs[5][20] = {"ruby", "php", "golang", "rust", "csharp"};
   char hard_langs[5][20] = {"dart", "haskell", "scala", "erlang", "ocaml"};
 
   // programming cepbr list
-  char easy_cepbr[5][20] = {"goiania", "brasil", "rio de janeiro", "goias", "brasilia"};
-  char normal_cepbr[5][20] = {"rio verde", "uberlandia", "jatai", "amazonas", "nordeste"};
-  char hard_cepbr[5][20] = {"passa tempo", "montividiu", "pindamonhangaba", "doverlandia", "guapo"};
+  char easy_cepbr[5][20] = {"goiania", "brasil", "fortaleza", "goias", "brasilia"};
+  char normal_cepbr[5][20] = {"salvador", "uberlandia", "jatai", "amazonas", "nordeste"};
+  char hard_cepbr[5][20] = {"jequie", "montividiu", "pindamonhangaba", "doverlandia", "guapo"};
 
   // programming pch list
   char easy_pch[5][20] = {"nariz", "olho", "cabelo", "dedo", "boca"};
