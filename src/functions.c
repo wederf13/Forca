@@ -30,7 +30,7 @@ void read_game_data(int theme, int level, char name[50])
 
 void choose_word(int level, int theme, char word[50])
 {
-  
+  char easy_langs[5][20] = {"c", "python", "javascript", "java", "cplusplus"};
 }
 
 void game(int theme, int level, char name[50])
