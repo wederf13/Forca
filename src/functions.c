@@ -41,6 +41,12 @@ void choose_word(int level, int theme, char word[50])
   char easy_cepbr[5][20] = {"goiania", "brasil", "rio de janeiro", "goias", "brasilia"};
   char normal_cepbr[5][20] = {"rio verde", "uberlandia", "jatai", "amazonas", "nordeste"};
   char hard_cepbr[5][20] = {"passa tempo", "montividiu", "pindamonhangaba", "doverlandia", "guapo"};
+
+  // programming pch list
+  char easy_pch[5][20] = {"nariz", "olho", "cabelo", "dedo", "boca"};
+  char normal_pch[5][20] = {"femur", "coccix", "timo", "tibia", "iris"};
+  char hard_pch[5][20] = {"eponiqio", "gnatico", "zigomatico", "tonsila", "antihelice"};
+  
 }
 
 void game(int theme, int level, char name[50])
