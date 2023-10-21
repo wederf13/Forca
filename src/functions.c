@@ -45,7 +45,7 @@ void display_hangman(int mistakes)
   };
 
   if (mistakes >= 1)
-    strcpy(hangman[2], "               O");
+    strcpy(hangman[2], "  |               O");
 	
 	
 }
