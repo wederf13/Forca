@@ -39,4 +39,3 @@ void show_play_again_message()
   printf("Deseja jogar novamente?[1 - SIM/2 - NÃO]\n");
   printf("--> ");
 }
- src/functions.c
