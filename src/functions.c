@@ -28,6 +28,11 @@ void read_game_data(int theme, int level, char name[50])
   printf("THEME %d, LEVEL %d, NAME %s\n", theme, level, name);
 }
 
+void display_hangman(int mistakes)
+{
+  
+}
+
 void choose_word(int level, int theme, char word[50])
 {
   // places list
