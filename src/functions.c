@@ -31,7 +31,8 @@ void read_game_data(int theme, int level, char name[50])
 void choose_word(int level, int theme, char word[50])
 {
   char easy_places[5][20] = {"ru", "inf", "cab"};
-  
+
+  // programming language list
   char easy_langs[5][20] = {"c", "python", "javascript", "java", "cplusplus"};
   char normal_langs[5][20] = {"ruby", "php", "golang", "rust", "csharp"};
   char hard_langs[5][20] = {"dart", "haskell", "scala", "erlang", "ocaml"};
