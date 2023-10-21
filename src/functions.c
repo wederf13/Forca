@@ -32,6 +32,11 @@ void choose_word(int level, int theme, char word[50])
 {
   char easy_places[5][20] = {"ru", "inf", "cab"};
 
+  // programming ufg places list
+  char easy_places[5][20] = {"ru", "inf", "cab", "biblioteca", "reuni"};
+  char normal_places[5][20] = {"dce", "draco", "reitoria", "emac", "fav"
+  cahr hard_places[5][20] = {""}
+  
   // programming language list
   char easy_langs[5][20] = {"c", "python", "javascript", "java", "cplusplus"};
   char normal_langs[5][20] = {"ruby", "php", "golang", "rust", "csharp"};
