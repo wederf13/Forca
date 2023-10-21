@@ -56,6 +56,11 @@ void choose_word(int level, int theme, char word[50])
   char easy_fruits[5][20] = {"banana", "manga", "uva", "melancia", "abacaxi"};
   char normal_fruits[5][20] = {"tangerina", "kiwi", "carambola", "framboesa", "damasco"};
   char hard_fruits[5][20] = {"pitaya", "kiwano", "salak", "cajui", "graviola"};
+
+  //animals list
+  char easy_animals[5][20] = {"cachorro", "gato", "arara", "cavalo", "coelho"};
+  char normal_animals[5][20] = {"caranguejo", "camaleao", "camelo", "hiena", "esquilo"};
+  char hard_animals[5][20] = {"crocodilo", "antilope", "seriema", "garuba", "casuar"};
   
 }
 
