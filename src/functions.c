@@ -30,8 +30,7 @@ void read_game_data(int theme, int level, char name[50])
 
 void choose_word(int level, int theme, char word[50])
 {
-  
-  //char easy_places[5][20] = {"ru", "inf", "cab"};
+  // places list
   char easy_places[5][20] = {"ru", "inf", "cab", "biblioteca", "reuni"};
   char normal_places[5][20] = {"dce", "draco", "reitoria", "emac", "fav"};
   char hard_places[5][20] = {"fefd", "face", "letras", "buraco", "delicias"}; 
@@ -41,28 +40,28 @@ void choose_word(int level, int theme, char word[50])
   char normal_langs[5][20] = {"ruby", "php", "golang", "rust", "csharp"};
   char hard_langs[5][20] = {"dart", "haskell", "scala", "erlang", "ocaml"};
 
-  // programming cepbr list
+  // cepbr list
   char easy_cepbr[5][20] = {"goiania", "brasil", "fortaleza", "goias", "brasilia"};
   char normal_cepbr[5][20] = {"salvador", "uberlandia", "jatai", "amazonas", "nordeste"};
   char hard_cepbr[5][20] = {"jequie", "montividiu", "pindamonhangaba", "doverlandia", "guapo"};
 
-  // programming pch list
+  // pch list
   char easy_pch[5][20] = {"nariz", "olho", "cabelo", "dedo", "boca"};
   char normal_pch[5][20] = {"femur", "coccix", "timo", "tibia", "iris"};
   char hard_pch[5][20] = {"eponiqio", "gnatico", "zigomatico", "tonsila", "antihelice"};
   
-  // programming fruits list
+  // fruits list
   char easy_fruits[5][20] = {"banana", "manga", "uva", "melancia", "abacaxi"};
   char normal_fruits[5][20] = {"tangerina", "kiwi", "carambola", "framboesa", "damasco"};
   char hard_fruits[5][20] = {"pitaya", "kiwano", "salak", "cajui", "graviola"};
 
-  // programming animals list
+  // animals list
   char easy_animals[5][20] = {"cachorro", "gato", "arara", "cavalo", "coelho"};
   char normal_animals[5][20] = {"caranguejo", "camaleao", "camelo", "hiena", "esquilo"};
   char hard_animals[5][20] = {"crocodilo", "antilope", "seriema", "guaruba", "casuar"};
 
   // secret phrase
-  char secret_phrase[50] = {"professor_hebert_passa_todo_mundo_por_favor"};
+  char secret_phrase[1][50] = {"professor_hebert_passa_todo_mundo_por_favor"};
   
 }
 
