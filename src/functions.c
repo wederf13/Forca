@@ -30,7 +30,24 @@ void read_game_data(int theme, int level, char name[50])
 
 void display_hangman(int mistakes)
 {
-  
+  char hangman[10][18] = 
+  {
+    "  |----------------",
+    "  |               |",
+    "  |",
+    "  |",
+    "  |",
+    "  |",
+    "  |",
+    "  |",
+    "  |",
+    "  |"
+  };
+
+  if (mistakes >= 1)
+    strcpy(hangman[2], "               O");
+	
+	
 }
 
 void choose_word(int level, int theme, char word[50])
