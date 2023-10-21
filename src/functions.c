@@ -68,20 +68,20 @@ void choose_word(int level, int theme, char word[50])
   // copying word list
   if (theme == 1)
   {
-    if (level ==1)
+    if (level == 1)
     {
-      for (int i=0; i<5; i++)
-        strcpy(places_list[i], easy_places[i]);
+      for (int i = 0; i < 5; i++)
+        strcpy(word_list[i], easy_places[i]);
     }
     else if (level == 2)
     {
       for (int i = 0; i < 5; i++)
-        strcpy(places_list[i], normal_places[i]);
+        strcpy(word_list[i], normal_places[i]);
     }
     else
     {
       for (int i = 0; i < 5; i++)
-        strcpy(places_list[i], hard_places[i]);
+        strcpy(word_list[i], hard_places[i]);
     }
   }
     
