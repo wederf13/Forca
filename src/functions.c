@@ -62,7 +62,7 @@ void choose_word(int level, int theme, char word[50])
   char hard_animals[5][20] = {"crocodilo", "antilope", "seriema", "guaruba", "casuar"};
 
   // secret phrase
-  char secret_phrase[50] = {"professor hebert passa todo mundo por favor"};
+  char secret_phrase[50] = {"professor_hebert_passa_todo_mundo_por_favor"};
   
 }
 
