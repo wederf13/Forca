@@ -61,7 +61,9 @@ void display_hangman(int mistakes)
 
   else if (mistakes >= 6)
     strcpy(hangman[4], "  |              / \\");
-	
+
+  for (int i = 0; i < 7; i++)
+    printf("%s\n", hangman[i]);
 }
 
 void choose_word(int level, int theme, char word[50])
