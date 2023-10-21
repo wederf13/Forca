@@ -30,7 +30,7 @@ void read_game_data(int theme, int level, char name[50])
 
 void display_hangman(int mistakes)
 {
-  char hangman[10][18] = 
+  char hangman[10][21] = 
   {
     "  |----------------",
     "  |               |",
@@ -62,7 +62,7 @@ void display_hangman(int mistakes)
   if (mistakes >= 6)
     strcpy(hangman[4], "  |              / \\");
 
-  for (int i = 0; i < 7; i++)
+  for (int i = 0; i < 21; i++)
     printf("%s\n", hangman[i]);
 }
 
