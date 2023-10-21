@@ -66,7 +66,11 @@ void choose_word(int level, int theme, char word[50])
   char word_list[5][20];
 
   // copying word list
-  if (theme == 2)
+  if ()
+  {
+    
+  }
+  else if (theme == 2)
   {
     if (level == 1)
     {
