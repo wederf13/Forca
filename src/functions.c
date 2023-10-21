@@ -96,9 +96,28 @@ void choose_word(int level, int theme, char word[50])
       for (int i = 0; i < 5; i++)
         strcpy(word_list[i], normal_langs[i]);
     }
-    else {
+    else 
+    {
       for (int i = 0; i < 5; i++)
         strcpy(word_list[i], hard_langs[i]);
+    }
+  }
+  else if (theme == 3)
+  {
+    if (level == 1)
+    {
+      for (int i = 0; i < 5; i++)
+        strcpy(word_list[i], easy_cepbr[i]);
+    }
+    else if (level == 2)
+    {
+      for (int i = 0; i < 5; i++)
+        strcpy(word_list[i], normal_cepbr[i]);
+    }
+    else 
+    {
+      for (int i = 0; i < 5; i++)
+        strcpy(word_list[i], hard_cepbr[i]);
     }
   }
   
