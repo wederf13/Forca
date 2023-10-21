@@ -60,7 +60,7 @@ void choose_word(int level, int theme, char word[50])
   //animals list
   char easy_animals[5][20] = {"cachorro", "gato", "arara", "cavalo", "coelho"};
   char normal_animals[5][20] = {"caranguejo", "camaleao", "camelo", "hiena", "esquilo"};
-  char hard_animals[5][20] = {"crocodilo", "antilope", "seriema", "garuba", "casuar"};
+  char hard_animals[5][20] = {"crocodilo", "antilope", "seriema", "guaruba", "casuar"};
   
 }
 
