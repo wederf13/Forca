@@ -64,7 +64,8 @@ void choose_word(int level, int theme, char word[50])
   char secret_phrase[1][50] = {"professor_hebert_passa_todo_mundo_por_favor"};
 
   char word_list[5][20];
-
+  char word_count;
+  
   // copying word list
   if (theme == 1)
   {
@@ -72,16 +73,19 @@ void choose_word(int level, int theme, char word[50])
     {
       for (int i = 0; i < 5; i++)
         strcpy(word_list[i], easy_places[i]);
+      word_count = 5;
     }
     else if (level == 2)
     {
       for (int i = 0; i < 5; i++)
         strcpy(word_list[i], normal_places[i]);
+      word_count = 5;
     }
     else
     {
       for (int i = 0; i < 5; i++)
         strcpy(word_list[i], hard_places[i]);
+      word_count = 5;
     }
   }
     
@@ -91,16 +95,19 @@ void choose_word(int level, int theme, char word[50])
     {
       for (int i = 0; i < 5; i++)
         strcpy(word_list[i], easy_langs[i]);
+      word_count = 5;
     }
     else if (level == 2)
     {
       for (int i = 0; i < 5; i++)
         strcpy(word_list[i], normal_langs[i]);
+      word_count = 5;
     }
     else 
     {
       for (int i = 0; i < 5; i++)
         strcpy(word_list[i], hard_langs[i]);
+      word_count = 5;
     }
   }
     
@@ -110,16 +117,19 @@ void choose_word(int level, int theme, char word[50])
     {
       for (int i = 0; i < 5; i++)
         strcpy(word_list[i], easy_cepbr[i]);
+      word_count = 5;
     }
     else if (level == 2)
     {
       for (int i = 0; i < 5; i++)
         strcpy(word_list[i], normal_cepbr[i]);
+      word_count = 5;
     }
     else 
     {
       for (int i = 0; i < 5; i++)
         strcpy(word_list[i], hard_cepbr[i]);
+      word_count = 5;
     }
   }
 
@@ -129,16 +139,19 @@ void choose_word(int level, int theme, char word[50])
     {
       for (int i = 0; i < 5; i++)
         strcpy(word_list[i], easy_pch[i]);
+      word_count = 5;
     }
     else if (level == 2)
     {
       for (int i = 0; i < 5; i++)
         strcpy(word_list[i], normal_pch[i]);
+      word_count = 5;
     }
     else
     {
       for (int i = 0; i < 5; i++)
         strcpy(word_list[i], hard_pch[i]);
+      word_count = 5;
     }
   }
 
@@ -148,16 +161,19 @@ void choose_word(int level, int theme, char word[50])
     {
       for (int i = 0; i < 5; i++)
         strcpy(word_list[i], easy_fruits[i]);
+      word_count = 5;
     }
     else if (level == 2)
     {
       for (int i = 0; i < 5; i++)
         strcpy(word_list[i], normal_fruits[i]);
+      word_count = 5;
     }
     else 
     {
       for (int i = 0; i < 5; i++)
         strcpy(word_list[i], hard_langs[i]);
+      word_count = 5;
     }
   }
 
@@ -167,19 +183,23 @@ void choose_word(int level, int theme, char word[50])
     {
       for (int i = 0; i < 5; i++)
         strcpy(word_list[i], easy_animals[i]);
+      word_count = 5;
     }
     else if (level == 2)
     {
       for (int i = 0; i < 5; i++)
         strcpy(word_list[i], normal_animals[i]);
+      word_count = 5;
     }
     else 
     {
       for (int i = 0; i < 5; i++)
         strcpy(word_list[i], hard_animals[i]);
+      word_count = 5;
     }
   }
-    
+  int random_index = rand() % word_count;
+  strcpy(word, word_list[random_index]);
 }
 
 void game(int theme, int level, char name[50])
