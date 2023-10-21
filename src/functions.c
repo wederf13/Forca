@@ -178,7 +178,7 @@ void choose_word(int level, int theme, char word[50])
       for (int i = 0; i < 5; i++)
         strcpy(word_list[i], hard_animals[i]);
     }
-
+  }
     
 }
 
