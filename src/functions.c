@@ -120,6 +120,24 @@ void choose_word(int level, int theme, char word[50])
         strcpy(word_list[i], hard_cepbr[i]);
     }
   }
+
+  else if (theme == 4)
+  {
+    if (level == 1)
+    {
+      for (int i = 0; i < 5; i++)
+        strcpy(word_list[i], easy_pch[i]);
+    }
+    else if (level == 2)
+    {
+      for (int i = 0; i < 5; i++)
+        strcpy(word_list[i], normal_pch[i]);
+    }
+    else {
+      for (int i = 0; i < 5; i++)
+        strcpy(word_list[i], hard_pch[i]);
+    }
+  }
   
 }
 
