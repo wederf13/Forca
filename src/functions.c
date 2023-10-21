@@ -154,6 +154,24 @@ void choose_word(int level, int theme, char word[50])
     }
   }
   
+  else (theme == 6)
+  {
+    if (level == 1)
+    {
+      for (int i = 0; i < 5; i++)
+        strcpy(word_list[i], easy_animals[i]);
+    }
+    else if (level == 2)
+    {
+      for (int i = 0; i < 5; i++)
+        strcpy(word_list[i], normal_animals[i]);
+    }
+    else {
+      for (int i = 0; i < 5; i++)
+        strcpy(word_list[i], hard_animals[i]);
+    }
+  }
+
 }
 
 void game(int theme, int level, char name[50])
