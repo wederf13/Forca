@@ -56,6 +56,8 @@ void display_hangman(int mistakes)
   else if (mistakes >= 4)
     strcpy(hangman[3], "  |              /|\");
 
+  else if (mistakes >= 5)
+    strcpy(hangman[4], "  |              /");
 	
 }
 
