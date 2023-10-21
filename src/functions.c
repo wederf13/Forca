@@ -36,6 +36,11 @@ void choose_word(int level, int theme, char word[50])
   char easy_langs[5][20] = {"c", "python", "javascript", "java", "cplusplus"};
   char normal_langs[5][20] = {"ruby", "php", "golang", "rust", "csharp"};
   char hard_langs[5][20] = {"dart", "haskell", "scala", "erlang", "ocaml"};
+
+  // programming cepbr list
+  char easy_cepbr[5][20] = {"goiania", "brasil", "rio de janeiro", "goias", "brasilia"};
+  char normal_cepbr[5][20] = {"rio verde", "uberlandia", "jatai", "amazonas", "nordeste"};
+  char hard_cepbr[5][20] = {"passa tempo", "montividiu", "pindamonhangaba", "doverlandia", "guapo"};
 }
 
 void game(int theme, int level, char name[50])
