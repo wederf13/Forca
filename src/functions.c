@@ -52,7 +52,7 @@ void choose_word(int level, int theme, char word[50])
   char normal_pch[5][20] = {"femur", "coccix", "timo", "tibia", "iris"};
   char hard_pch[5][20] = {"eponiqio", "gnatico", "zigomatico", "tonsila", "antihelice"};
   
-  //fruits list
+  // programming fruits list
   char easy_fruits[5][20] = {"banana", "manga", "uva", "melancia", "abacaxi"};
   char normal_fruits[5][20] = {"tangerina", "kiwi", "carambola", "framboesa", "damasco"};
   char hard_fruits[5][20] = {"pitaya", "kiwano", "salak", "cajui", "graviola"};
