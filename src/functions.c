@@ -30,12 +30,11 @@ void read_game_data(int theme, int level, char name[50])
 
 void choose_word(int level, int theme, char word[50])
 {
-  char easy_places[5][20] = {"ru", "inf", "cab"};
-
-  // programming ufg places list
+  
+  //char easy_places[5][20] = {"ru", "inf", "cab"};
   char easy_places[5][20] = {"ru", "inf", "cab", "biblioteca", "reuni"};
-  char normal_places[5][20] = {"dce", "draco", "reitoria", "emac", "fav"
-  cahr hard_places[5][20] = {""}
+  char normal_places[5][20] = {"dce", "draco", "reitoria", "emac", "fav"};
+  char hard_places[5][20] = {"fefd", "face", "letras", "buraco", "delicias"}; 
   
   // programming languages list
   char easy_langs[5][20] = {"c", "python", "javascript", "java", "cplusplus"};
@@ -61,6 +60,9 @@ void choose_word(int level, int theme, char word[50])
   char easy_animals[5][20] = {"cachorro", "gato", "arara", "cavalo", "coelho"};
   char normal_animals[5][20] = {"caranguejo", "camaleao", "camelo", "hiena", "esquilo"};
   char hard_animals[5][20] = {"crocodilo", "antilope", "seriema", "guaruba", "casuar"};
+
+  // secret phrase
+  char secret_phrase[50] = {"professor hebert passa todo mundo por favor"};
   
 }
 
