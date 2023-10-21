@@ -198,8 +198,10 @@ void choose_word(int level, int theme, char word[50])
       word_count = 5;
     }
   }
+  
   int random_index = rand() % word_count;
   strcpy(word, word_list[random_index]);
+  
 }
 
 void game(int theme, int level, char name[50])
