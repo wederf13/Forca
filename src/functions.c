@@ -13,7 +13,7 @@ void show_project_info()
 
 void show_exit_message()
 {
-  printf("Obrigado por jogar\n");
+  printf("Obrigado por jogar!!!\n");
 }
 
 void read_game_data(int theme, int level, char name[50])
@@ -250,6 +250,6 @@ void game(int theme, int level, char name[50])
 
 void show_play_again_message()
 {
-  printf("Deseja jogar novamente?[1 - SIM/2 - NÃO]\n");
+  printf("Deseja jogar novamente?[1 - SIM / 2 - NÃO]\n");
   printf("--> ");
 }
