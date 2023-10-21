@@ -62,6 +62,27 @@ void choose_word(int level, int theme, char word[50])
 
   // secret phrase
   char secret_phrase[1][50] = {"professor_hebert_passa_todo_mundo_por_favor"};
+
+  char word_list[5][20];
+
+  // copying word list
+  if (theme == 2)
+  {
+    if (level == 1)
+    {
+      for (int i = 0; i < 5; i++)
+        strcpy(word_list[i], easy_langs[i]);
+    }
+    else if (level == 2)
+    {
+      for (int i = 0; i < 5; i++)
+        strcpy(word_list[i], normal_langs[i]);
+    }
+    else {
+      for (int i = 0; i < 5; i++)
+        strcpy(word_list[i], hard_langs[i]);
+    }
+  }
   
 }
 
