@@ -84,6 +84,7 @@ void choose_word(int level, int theme, char word[50])
         strcpy(places_list[i], hard_places[i]);
     }
   }
+    
   else if (theme == 2)
   {
     if (level == 1)
@@ -102,6 +103,7 @@ void choose_word(int level, int theme, char word[50])
         strcpy(word_list[i], hard_langs[i]);
     }
   }
+    
   else if (theme == 3)
   {
     if (level == 1)
@@ -133,13 +135,15 @@ void choose_word(int level, int theme, char word[50])
       for (int i = 0; i < 5; i++)
         strcpy(word_list[i], normal_pch[i]);
     }
-    else {
+    else
+    {
       for (int i = 0; i < 5; i++)
         strcpy(word_list[i], hard_pch[i]);
     }
-}
+  }
 
- else if (theme == 5) {
+ else if (theme == 5) 
+ {
      if (level == 1)
     {
       for (int i = 0; i < 5; i++)
@@ -150,17 +154,13 @@ void choose_word(int level, int theme, char word[50])
       for (int i = 0; i < 5; i++)
         strcpy(word_list[i], normal_fruits[i]);
     }
-    else {
+    else 
+    {
       for (int i = 0; i < 5; i++)
         strcpy(word_list[i], hard_langs[i]);
     }
   }
 
-
-
-
-    
-  
   else if (theme == 6)
   {
     if (level == 1)
@@ -173,12 +173,13 @@ void choose_word(int level, int theme, char word[50])
       for (int i = 0; i < 5; i++)
         strcpy(word_list[i], normal_animals[i]);
     }
-    else {
+    else 
+    {
       for (int i = 0; i < 5; i++)
         strcpy(word_list[i], hard_animals[i]);
     }
-  
 
+    
 }
 
 void game(int theme, int level, char name[50])
