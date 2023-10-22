@@ -8,7 +8,8 @@ CFLAGS = -Wall -I./include
 SRCDIR = src
 OBJDIR = obj
 BINDIR = bin
-# Compilador
+
+# compiler
 CC = gcc
 
 # compilation options
