@@ -1,46 +1,46 @@
-# Compilador
+# compiler
 CC = gcc
 
-# Opções de compilação
+# compilation options
 CFLAGS = -Wall -I./include
 
-# Diretórios
+# directories
 SRCDIR = src
 OBJDIR = obj
 BINDIR = bin
 # Compilador
 CC = gcc
 
-# Opções de compilação
+# compilation options
 CFLAGS = -Wall -I./include
 
-# Diretórios
+# directories
 SRCDIR = src
 OBJDIR = obj
 
-# Nome do executável
+# executable name
 EXECUTABLE = forca
 
-# Arquivos fonte
+# source files
 SOURCES = $(wildcard $(SRCDIR)/*.c)
 OBJECTS = $(patsubst $(SRCDIR)/%.c, $(OBJDIR)/%.o, $(SOURCES))
 
-# Alvo padrão
+# default target
 all: $(EXECUTABLE)
 
-# Alvo para o executável
+# target for the executable
 $(EXECUTABLE): $(OBJECTS)
 	$(CC) $(CFLAGS) $^ -o $@
 
-# Alvo para objetos
+# target for objects
 $(OBJDIR)/%.o: $(SRCDIR)/%.c
 	$(CC) $(CFLAGS) -c $< -o $@
 
-# Alvo para limpar arquivos gerados
+# target to clean generated files
 clean:
 	rm -rf $(OBJDIR) $(EXECUTABLE)
 
-# Cria o diretório de objetos, caso não exista
+# creates the object directory, if it does not exist
 $(shell mkdir -p $(OBJDIR))
 
 .PHONY: all clean
