@@ -288,7 +288,7 @@ void choose_word(int level, int theme, char word[50])
   
 }
 
-void game(int theme, int level, char name[50], char theme_name[1][30], char level_namel[1][8])
+void game(int theme, int level, char name[50], char theme_name[1][30], char level_namel[1][10])
 {
   printf("O jogo está funcionando.\n");
   read_game_data(theme, level, name, theme_name, level_name);
