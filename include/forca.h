@@ -15,10 +15,10 @@
 
 
 // procedures declarations
-void read_game_data(int theme, int level, char name[50], char theme_name[30], char level_name[10]);
+void read_game_data(int *theme, int *level, char name[50], char theme_name[30], char level_name[10]);
 void display_hangman(int mistakes);
 void choose_word(int level, int theme, char word[50]);
-void game(int theme, int level, char name[50], char theme_name[30], char level_name[10]);
+void game();
 void show_menu();
 void show_project_info();
 void show_exit_message();
