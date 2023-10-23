@@ -210,7 +210,7 @@ void choose_word(int level, int theme, char word[50])
     else 
     {
       for (int i = 0; i < 5; i++)
-        strcpy(word_list[i], hard_langs[i]);
+        strcpy(word_list[i], hard_fruits[i]);
       word_count = 5;
     }
   }
