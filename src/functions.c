@@ -27,50 +27,50 @@ void read_game_data(int theme, int level, char name[50])
 
   if (theme == 1)
     {
-        strcpy(name_theme, "Lugares da UFG");
+        strcpy(theme_name, "Lugares da UFG");
     }
 
     else if (theme == 2)
     {
-        strcpy(name_theme, "Linguagens de Programação");
+        strcpy(theme_name, "Linguagens de Programação");
     }
 
     else if (theme == 3)
     {
-        strcpy(name_theme, "CEP");
+        strcpy(theme_name, "CEP");
     }
 
     else if (theme == 4)
     {
-        strcpy(name_theme, "PCH");
+        strcpy(theme_name, "PCH");
     }
 
     else if (theme == 5)
     {
-        strcpy(name_theme, "Frutas");
+        strcpy(theme_name, "Frutas");
     }
 
     else if (theme == 6)
     {
-        strcpy(name_theme, "Animais");
+        strcpy(theme_name, "Animais");
     }
     
     if (level == 1)
     {
-        strcpy(name_level, "Fácil");
+        strcpy(leve_name, "Fácil");
     }
     
     else if (level == 2)
     {
-        strcpy(name_level, "Médio");
+        strcpy(leve_name, "Médio");
     }
 
     else if (level == 3)
     {
-        strcpy(name_level, "Difícil");
+        strcpy(leve_name, "Difícil");
     }
     
-    printf("Tema: %s, Level: %s, Nome: %s\n", name_theme, name_level, name);
+    printf("Tema: %s, Level: %s, Nome: %s\n", theme_name, leve_name, name);
 
 }
 
