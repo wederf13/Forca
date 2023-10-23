@@ -8,7 +8,7 @@ void show_menu()
 
 void show_project_info()
 {
-  printf("Essas são as informações do nosso projeto.\n");
+  printf("Essas são as informações do nosso projeto:\n");
 }
 
 void show_exit_message()
