@@ -4,6 +4,8 @@ int main()
 {
   int option, theme = 0, level = 0, play_again;
   char name[50];
+  char theme_name[1][30];
+  char level_name[1][10];
 
   do 
   {
@@ -19,7 +21,7 @@ int main()
     {
       case 1:
       {
-        game(theme, level, name);
+        game(theme, level, name, theme_name, level_name);
 
         do
         {
