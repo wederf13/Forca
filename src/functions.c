@@ -25,7 +25,7 @@ void read_game_data(int theme, int level, char name[50])
   printf("Nome: ");
   scanf("%s", name);
 
-  if (theme == 1)
+    if (theme == 1)
     {
         strcpy(theme_name, "Lugares da UFG");
     }
