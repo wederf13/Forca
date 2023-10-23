@@ -16,7 +16,7 @@ void show_exit_message()
   printf("Obrigado por jogar!!!\n");
 }
 
-void read_game_data(int theme, int level, char name[50])
+void read_game_data(int theme, int level, char name[50], char theme_name[1][30], char level_namel[1][10])
 {
   printf("Tema:\n1 - Lugares da UFG\n2 - Linguagens de Programação\n3 - CEP\n4 - PCH\n5 - Frutas\n6 - Animais\n--> ");
   scanf("%d", &theme);
