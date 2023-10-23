@@ -16,7 +16,7 @@ void show_exit_message()
   printf("Obrigado por jogar!!!\n");
 }
 
-void read_game_data(int theme, int level, char name[50], char theme_name[1][30], char level_namel[1][10])
+void read_game_data(int theme, int level, char name[50], char theme_name[30], char level_name[10])
 {
   printf("Tema:\n1 - Lugares da UFG\n2 - Linguagens de Programação\n3 - CEP\n4 - PCH\n5 - Frutas\n6 - Animais\n--> ");
   scanf("%d", &theme);
@@ -25,52 +25,45 @@ void read_game_data(int theme, int level, char name[50], char theme_name[1][30],
   printf("Nome: ");
   scanf("%s", name);
 
-    if (theme == 1)
-    {
-        strcpy(theme_name, "Lugares da UFG");
-    }
-
-    else if (theme == 2)
-    {
-        strcpy(theme_name, "Linguagens de Programação");
-    }
-
-    else if (theme == 3)
-    {
-        strcpy(theme_name, "CEP");
-    }
-
-    else if (theme == 4)
-    {
-        strcpy(theme_name, "PCH");
-    }
-
-    else if (theme == 5)
-    {
-        strcpy(theme_name, "Frutas");
-    }
-
-    else if (theme == 6)
-    {
-        strcpy(theme_name, "Animais");
-    }
+  if (theme == 1)
+  {
+    strcpy(theme_name, "Lugares da UFG");
+  }
+  else if (theme == 2)
+  {
+    strcpy(theme_name, "Linguagens de Programação"); 
+  }
+  else if (theme == 3)
+  {
+    strcpy(theme_name, "CEP");
+  }
+  else if (theme == 4)
+  {
+    strcpy(theme_name, "PCH");
+  }
+  else if (theme == 5)
+  {
+    strcpy(theme_name, "Frutas");
+  }
+  else if (theme == 6)
+  {
+    strcpy(theme_name, "Animais");
+  }
     
-    if (level == 1)
-    {
-        strcpy(level_name, "Fácil");
-    }
+  if (level == 1)
+  {
+    strcpy(level_name, "Fácil");
+  }
+  else if (level == 2)
+  {
+    strcpy(level_name, "Médio");
+  }
+  else if (level == 3)
+  {
+    strcpy(level_name, "Difícil");
+  }
     
-    else if (level == 2)
-    {
-        strcpy(level_name, "Médio");
-    }
-
-    else if (level == 3)
-    {
-        strcpy(level_name, "Difícil");
-    }
-    
-    printf("Tema: %s, Level: %s, Nome: %s\n", theme_name, level_name, name);
+  printf("Tema: %s, Level: %s, Nome: %s\n", theme_name, level_name, name);
 
 }
 
@@ -288,7 +281,7 @@ void choose_word(int level, int theme, char word[50])
   
 }
 
-void game(int theme, int level, char name[50], char theme_name[1][30], char level_namel[1][10])
+void game(int theme, int level, char name[50], char theme_name[30], char level_name[10])
 {
   printf("O jogo está funcionando.\n");
   read_game_data(theme, level, name, theme_name, level_name);
