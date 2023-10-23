@@ -16,12 +16,12 @@ void show_exit_message()
   printf("Obrigado por jogar!!!\n");
 }
 
-void read_game_data(int theme, int level, char name[50], char theme_name[30], char level_name[10])
+void read_game_data(int *theme, int *level, char name[50], char theme_name[30], char level_name[10])
 {
   printf("Tema:\n1 - Lugares da UFG\n2 - Linguagens de Programação\n3 - CEP\n4 - PCH\n5 - Frutas\n6 - Animais\n--> ");
-  scanf("%d", &theme);
+  scanf("%d", theme);
   printf("Level: \n1 - Fácil\n2 - Médio\n3 - Difícil\n--> ");
-  scanf("%d", &level);
+  scanf("%d", level);
   printf("Nome: ");
   scanf("%s", name);
 
@@ -281,10 +281,9 @@ void choose_word(int level, int theme, char word[50])
   
 }
 
-void game(int theme, int level, char name[50], char theme_name[30], char level_name[10])
+void game()
 {
   printf("O jogo está funcionando.\n");
-  read_game_data(theme, level, name, theme_name, level_name);
 }
 
 void show_play_again_message()
