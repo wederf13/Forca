@@ -15,7 +15,7 @@
 
 
 // procedures declarations
-void read_game_data(int theme, int level, char name[50]);
+void read_game_data(int theme, int level, char name[50], char theme_name[1][30], char level_name[1][10]);
 void display_hangman(int mistakes);
 void choose_word(int level, int theme, char word[50]);
 void game(int theme, int level, char name[50], char theme_name[1][30], char level_name[1][10]);
