@@ -4,8 +4,8 @@ int main()
 {
   int option, theme = 0, level = 0, play_again;
   char name[50];
-  char theme_name[1][30];
-  char level_name[1][10];
+  char theme_name[30];
+  char level_name[10];
 
   do 
   {
