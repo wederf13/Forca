@@ -57,20 +57,20 @@ void read_game_data(int theme, int level, char name[50])
     
     if (level == 1)
     {
-        strcpy(leve_name, "Fácil");
+        strcpy(level_name, "Fácil");
     }
     
     else if (level == 2)
     {
-        strcpy(leve_name, "Médio");
+        strcpy(level_name, "Médio");
     }
 
     else if (level == 3)
     {
-        strcpy(leve_name, "Difícil");
+        strcpy(level_name, "Difícil");
     }
     
-    printf("Tema: %s, Level: %s, Nome: %s\n", theme_name, leve_name, name);
+    printf("Tema: %s, Level: %s, Nome: %s\n", theme_name, level_name, name);
 
 }
 
