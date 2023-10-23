@@ -18,7 +18,7 @@ void show_exit_message()
 
 void read_game_data(int theme, int level, char name[50])
 {
-  printf("Tema: (1, 2, 3, 4, 5, 6) -> ");
+  printf("Tema: (1 - Lugares da UFG\n, 2 - Linguagens de Programação\n, 3 - CEP\n, 4 - PCH\n, 5 - Frutas\n, 6 - Animais) -> ");
   scanf("%d", &theme);
   printf("Level: (1, 2, 3) -> ");
   scanf("%d", &level);
