@@ -8,7 +8,7 @@ void display_menu()
   printf(" ██╔══╝  ██║   ██║██╔══██╗██║     ██╔══██║    \n");
   printf(" ██║     ╚██████╔╝██║  ██║╚██████╗██║  ██║    \n");
   printf(" ╚═╝      ╚═════╝ ╚═╝  ╚═╝ ╚═════╝╚═╝  ╚═╝    \n");
-  printf(" 1 - Jogar\n2 - Sobre o Projeto\n0 - Sair\n");
+  printf(" 1 - Jogar\n 2 - Sobre o Projeto\n 0 - Sair\n");
   printf(" --> ");
 }
 
@@ -64,7 +64,7 @@ void read_game_data(int *theme, int *level, char name[50], char theme_name[30], 
 
   while (!valid_input)
 	{
-    printf(" Tema:\n1 - Lugares da UFG\n2 - Linguagens de Programação\n3 - CEP\n4 - PCH\n5 - Frutas\n6 - Animais\n--> ");
+    printf(" Tema:\n 1 - Lugares da UFG\n 2 - Linguagens de Programação\n 3 - CEP\n 4 - PCH\n 5 - Frutas\n 6 - Animais\n --> ");
 
     if (scanf("%d", theme) != 1) {
       printf(" ERRO: Opção Inválida. Insira um número.\n");
@@ -86,7 +86,7 @@ void read_game_data(int *theme, int *level, char name[50], char theme_name[30], 
 
   while (!valid_input)
   {
-    printf(" Level: \n1 - Fácil\n2 - Médio\n3 - Difícil\n--> ");
+    printf(" Level: \n 1 - Fácil\n 2 - Médio\n 3 - Difícil\n --> ");
 
     if (scanf("%d", level) != 1) {
       printf(" ERRO: Opção Inválida. Insira um número.\n");
@@ -365,9 +365,9 @@ void game(char word[50], char guessed_word[50], char incorrect_letters[26], char
 
   while (mistakes < 6)
   {
-    printf("\n%s\n", guessed_word);
+    printf("\n %s\n", guessed_word);
     
-    printf("Letras incorretas: ");
+    printf(" Letras incorretas: ");
     for (int i = 0; i < 26; i++)
     {
       if (incorrect_letters[i] == 1)
@@ -375,7 +375,7 @@ void game(char word[50], char guessed_word[50], char incorrect_letters[26], char
     }
     printf("\n");
 
-    printf("--> ");
+    printf(" --> ");
     char guess;
     scanf(" %c", &guess);
     guess = tolower(guess);
@@ -396,7 +396,7 @@ void game(char word[50], char guessed_word[50], char incorrect_letters[26], char
     }
     
     system("clear");
-    printf(" Tema: %s, Nível: %s, Nome: %s\n", theme_name, level_name, name);
+    printf("\n Tema: %s, Nível: %s, Nome: %s\n", theme_name, level_name, name);
     display_hangman(mistakes);
 
     if (is_word_guessed(word, guessed_word))
@@ -418,6 +418,6 @@ void game(char word[50], char guessed_word[50], char incorrect_letters[26], char
 
 void display_play_again_message()
 {
-  printf(" Deseja jogar novamente?[1 - SIM / 2 - NÃO]\n");
+  printf(" Deseja jogar novamente? [1 - SIM / 2 - NÃO]\n");
   printf(" --> ");
 }
