@@ -26,7 +26,7 @@ int main()
         system("clear");
         read_game_data(&theme, &level, name, theme_name, level_name);
         choose_word(level, theme, word);
-        game(word, guessed_word, incorrent_letters, name, theme_name, level_name);
+        game(word, guessed_word, incorrect_letters, name, theme_name, level_name);
         
         do
         {
