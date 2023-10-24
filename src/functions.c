@@ -14,11 +14,11 @@ void display_menu()
 
 void display_skull()
 {
-  printf("⣴⣿⣿⣿⣿⣿⣿⣦  \n");
-  printf("⣿⣿⣿⣿⣿⣿⣿⣿  \n");
-  printf("⣇⠈⠉⡿⢿⠉⠁⢸  \n");
-  printf("⠙⠛⢻⣷⣾⡟⠛⠋  \n");
-  printf("⠀⠀⠈⠈⠈⠀⠀⠀  \n");
+  printf(" ⣴⣿⣿⣿⣿⣿⣿⣦  \n");
+  printf(" ⣿⣿⣿⣿⣿⣿⣿⣿  \n");
+  printf(" ⣇⠈⠉⡿⢿⠉⠁⢸  \n");
+  printf(" ⠙⠛⢻⣷⣾⡟⠛⠋  \n");
+  printf("⠀⠀  ⠈⠈⠈⠀⠀⠀  \n");
 } 
 
 void display_winner_cat()
@@ -64,16 +64,16 @@ void read_game_data(int *theme, int *level, char name[50], char theme_name[30], 
 
   while (!valid_input)
 	{
-    printf("Tema:\n1 - Lugares da UFG\n2 - Linguagens de Programação\n3 - CEP\n4 - PCH\n5 - Frutas\n6 - Animais\n--> ");
+    printf(" Tema:\n1 - Lugares da UFG\n2 - Linguagens de Programação\n3 - CEP\n4 - PCH\n5 - Frutas\n6 - Animais\n--> ");
 
     if (scanf("%d", theme) != 1) {
-      printf("ERRO: Opção Inválida. Insira um número.\n");
+      printf(" ERRO: Opção Inválida. Insira um número.\n");
       while (getchar() != '\n'); // limpa o buffer de entrada
       continue;
     }
 
     if (*theme < 1 || *theme > 6) {
-      printf("ERRO: Tema Inválido. Insira um número de 1 a 6.\n");
+      printf(" ERRO: Tema Inválido. Insira um número de 1 a 6.\n");
       continue;
     }
 
@@ -86,24 +86,25 @@ void read_game_data(int *theme, int *level, char name[50], char theme_name[30], 
 
   while (!valid_input)
   {
-    printf("Level: \n1 - Fácil\n2 - Médio\n3 - Difícil\n--> ");
+    printf(" Level: \n1 - Fácil\n2 - Médio\n3 - Difícil\n--> ");
 
     if (scanf("%d", level) != 1) {
-      printf("ERRO: Opção Inválida. Insira um número.\n");
+      printf(" ERRO: Opção Inválida. Insira um número.\n");
       while (getchar() != '\n');
       continue;
     }
 
     if (*level < 1 || *level > 3) {
-      printf("ERRO: Nível Inválido. Insira um número de 1 a 3\n");
+      printf(" ERRO: Nível Inválido. Insira um número de 1 a 3\n");
       continue;
     }
 
     valid_input = 1;
   }
-  
-  printf("Nome: ");
-  scanf("%s", name);
+
+	getchar();
+  printf(" Nome: ");
+  scanf("%49[^\n]", name);
 
   if (*theme == 1)
     strcpy(theme_name, "Lugares da UFG");
@@ -125,7 +126,7 @@ void read_game_data(int *theme, int *level, char name[50], char theme_name[30], 
   else if (*level == 3)
     strcpy(level_name, "Difícil");
     
-  printf("Tema: %s, Nível: %s, Nome: %s\n", theme_name, level_name, name);
+  printf(" Tema: %s, Nível: %s, Nome: %s\n", theme_name, level_name, name);
 
 }
 
@@ -395,13 +396,13 @@ void game(char word[50], char guessed_word[50], char incorrect_letters[26], char
     }
     
     system("clear");
-    printf("Tema: %s, Nível: %s, Nome: %s\n", theme_name, level_name, name);
+    printf(" Tema: %s, Nível: %s, Nome: %s\n", theme_name, level_name, name);
     display_hangman(mistakes);
 
     if (is_word_guessed(word, guessed_word))
     {
       display_winner_cat();
-      printf("\nParabéns!!! Você acertou a palavra: %s\n", word);
+      printf("\n Parabéns!!! Você acertou a palavra: %s\n", word);
       break;
     }
 
@@ -409,7 +410,7 @@ void game(char word[50], char guessed_word[50], char incorrect_letters[26], char
     {
       system("clear");
       display_skull();
-      printf("\nVocê Perdeu!!! A palavra era: %s\n", word);
+      printf("\n Você Perdeu!!! A palavra era: %s\n", word);
       display_hangman(mistakes);
     }
   }
@@ -417,6 +418,6 @@ void game(char word[50], char guessed_word[50], char incorrect_letters[26], char
 
 void display_play_again_message()
 {
-  printf("Deseja jogar novamente?[1 - SIM / 2 - NÃO]\n");
-  printf("--> ");
+  printf(" Deseja jogar novamente?[1 - SIM / 2 - NÃO]\n");
+  printf(" --> ");
 }
