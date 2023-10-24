@@ -12,7 +12,7 @@
 #include <time.h>
 
 // function declarations
-
+void is_word_guessed();
 
 // procedures declarations
 void read_game_data(int *theme, int *level, char name[50], char theme_name[30], char level_name[10]);
