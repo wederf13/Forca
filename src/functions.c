@@ -2,6 +2,7 @@
 
 void display_menu()
 {
+	printf("\n");
   printf(" ███████╗ ██████╗ ██████╗  ██████╗ █████╗     \n");
   printf(" ██╔════╝██╔═══██╗██╔══██╗██╔════╝██╔══██╗    \n");
   printf(" █████╗  ██║   ██║██████╔╝██║     ███████║    \n");
@@ -354,6 +355,8 @@ void game(char word[50], char guessed_word[50], char incorrect_letters[26], char
   int word_length = strlen(word);
   int mistakes = 0;
 
+	char tried_letters[26] = {0};
+
   for (int i = 0; i < word_length; i++)
     guessed_word[i] = '_';
   guessed_word[word_length] = '\0';
@@ -375,11 +378,27 @@ void game(char word[50], char guessed_word[50], char incorrect_letters[26], char
     }
     printf("\n");
 
+		char input[2];
     printf(" --> ");
-    char guess;
-    scanf(" %c", &guess);
-    guess = tolower(guess);
-  
+		scanf("%1s", input);
+    // char guess;
+    // scanf(" %c", &guess);
+    // guess = tolower(guess);
+	
+		if (!isalpha(input[0]))
+		{
+			printf(" ERRO: Entrada Inválida. Insira uma letra.\n");
+			continue;
+		}
+
+		char guess = tolower(input[0]);
+
+		if (tried_letters[guess - 'a'] == 1)
+		{
+			printf(" Você já tentou essa letra. Tente outra.\n");
+			continue;
+		}
+		
     int correct = 0;
     for (int i = 0; i < word_length; i++)
     {
@@ -394,7 +413,9 @@ void game(char word[50], char guessed_word[50], char incorrect_letters[26], char
       incorrect_letters[guess - 'a'] = 1;
       mistakes++;
     }
-    
+
+		tried_letters[guess - 'a'] = 1;
+		
     system("clear");
     printf("\n Tema: %s, Nível: %s, Nome: %s\n", theme_name, level_name, name);
     display_hangman(mistakes);
@@ -409,9 +430,12 @@ void game(char word[50], char guessed_word[50], char incorrect_letters[26], char
     if (mistakes == 6)
     {
       system("clear");
+			printf("\n");
+			display_hangman(mistakes);
+			printf("\n");
       display_skull();
       printf("\n Você Perdeu!!! A palavra era: %s\n", word);
-      display_hangman(mistakes);
+      
     }
   }
 }
