@@ -18,7 +18,7 @@ void display_skull()
   printf("⣿⣿⣿⣿⣿⣿⣿⣿  \n");
   printf("⣇⠈⠉⡿⢿⠉⠁⢸  \n");
   printf("⠙⠛⢻⣷⣾⡟⠛⠋  \n");
-  printf("⠀⠀ ⠈⠈⠈⠀⠀⠀  \n");
+  printf("⠀⠀⠈⠈⠈⠀⠀⠀  \n");
 } 
 
 void display_winner_cat()
