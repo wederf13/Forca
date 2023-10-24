@@ -6,7 +6,7 @@ void display_menu()
   printf("--> ");
 }
 
-void show_project_info()
+void display_project_info()
 {
   printf("Essas são as informações do nosso projeto:\n");
   printf("Jogo de Forca desenvolvido como 1° projeto para a matéria de Introdução à Programação do curso de Ciência da Computação.\n"
