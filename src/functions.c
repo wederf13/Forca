@@ -263,6 +263,11 @@ void choose_word(int level, int theme, char word[50])
   
 }
 
+int is_word_guessed(char word[], char guessed_word[]) 
+{
+    return strcmp(word, guessed_word) == 0;
+}
+
 void game()
 {
   printf("O jogo está funcionando.\n");
