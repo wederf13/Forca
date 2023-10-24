@@ -9,6 +9,20 @@ void show_menu()
 void show_project_info()
 {
   printf("Essas são as informações do nosso projeto:\n");
+  printf("Jogo de Forca desenvolvido como 1° projeto para a matéria de Introdução à Programação do curso de Ciência da Computação.\n"
+         "Feito por: Rebeca, Sebastião, Sofia, Tiago, Vitória e Weder.\n\n"
+         "Conceitos utilizados no programa:\n\n"
+         "1 - Inclusão de Bibliotecas: O código inclui um arquivo de cabeçalho chamado 'forca.h' usando '#include'. Esse arquivo contém declarações de funções e definições de constantes usadas no programa.\n"
+  	 "2 - Função 'main': Esta é a função principal do programa, onde a execução começa.\n"
+         "3 - Inicialização do Gerador de Números Aleatórios: 'srand(time(NULL))'; é usado para inicializar o gerador de números aleatórios com uma semente baseada no tempo atual.\n"
+         "4 - Declaração de Variáveis: O código declara variáveis como 'word', 'option', 'theme', 'level', 'play_again', 'name', 'theme_name', e 'level_name'. Essas variáveis serão usadas para armazenar informações do jogo e escolhas do jogador.\n"
+         "5 - Estrutura de Repetição 'do while': O programa entra em um loop 'do while' que continuará sendo executado até que a variável 'option' seja igual a 2 ou 0, ou até que 'play_again' seja igual a 2. Isso permite que o jogador escolha continuar jogando ou sair do jogo.\n"
+         "6 - Menu e Seleção de Opções: O programa exibe um menu com opções para o jogador escolher. A escolha do jogador é lida com 'scanf', e há verificações para garantir que uma escolha válida seja feita. Se a entrada não for um número, uma mensagem de erro é exibida.\n"
+         "7 - Estrutura de Controle 'switch': O código usa uma estrutura de controle switch para lidar com diferentes opções selecionadas pelo jogador. A opção 1 inicia o jogo, a opção 2 mostra informações do projeto e a opção 0 encerra o jogo.\n"
+         "8 - Chamadas de Função: O programa chama várias funções, como 'show_menu()', 'game()', 'read_game_data()', 'choose_word()', 'show_play_again_message()', 'show_exit_message()', e 'show_project_info()'. A função 'game()' é responsável por executar o jogo da forca.\n"
+         "9 - Encerramento do Jogo: O jogo permite ao jogador escolher se deseja jogar novamente ou sair. O jogador pode selecionar as opções 1 para jogar novamente ou 2 para sair do jogo.\n"
+        "10 - Retorno da Função 'main': O programa retorna 0 no final, indicando uma execução bem-sucedida.\n"
+        "11 - Makefile: O arquivo 'Makefile' faz a junção de todos os outros arquivos para o funcionamento do código.\n");
 }
 
 void show_exit_message()
