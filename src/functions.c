@@ -400,13 +400,15 @@ void game(char word[50], char guessed_word[50], char incorrect_letters[26], char
 
     if (is_word_guessed(word, guessed_word))
     {
+      display_winner_cat();
       printf("\nParabéns!!! Você acertou a palavra: %s\n", word);
       break;
     }
 
     if (mistakes == 6)
     {
-	    system("clear");
+      system("clear");
+      display_skull();
       printf("\nVocê Perdeu!!! A palavra era: %s\n", word);
       display_hangman(mistakes);
     }
