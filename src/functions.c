@@ -20,7 +20,7 @@ void display_project_info()
          "Feito por: Rebeca, Sebastião, Sofia, Tiago, Vitória e Weder.\n\n"
          "Conceitos utilizados no programa:\n\n"
          "1 - Inclusão de Bibliotecas: O código inclui um arquivo de cabeçalho chamado 'forca.h' usando '#include'. Esse arquivo contém declarações de funções e definições de constantes usadas no programa.\n"
-  	     "2 - Função 'main': Esta é a função principal do programa, onde a execução começa.\n"
+  	 "2 - Função 'main': Esta é a função principal do programa, onde a execução começa.\n"
          "3 - Inicialização do Gerador de Números Aleatórios: 'srand(time(NULL))'; é usado para inicializar o gerador de números aleatórios com uma semente baseada no tempo atual.\n"
          "4 - Declaração de Variáveis: O código declara variáveis como 'word', 'option', 'theme', 'level', 'play_again', 'name', 'theme_name', e 'level_name'. Essas variáveis serão usadas para armazenar informações do jogo e escolhas do jogador.\n"
          "5 - Estrutura de Repetição 'do while': O programa entra em um loop 'do while' que continuará sendo executado até que a variável 'option' seja igual a 2 ou 0, ou até que 'play_again' seja igual a 2. Isso permite que o jogador escolha continuar jogando ou sair do jogo.\n"
@@ -105,7 +105,7 @@ void read_game_data(int *theme, int *level, char name[50], char theme_name[30], 
   else if (*level == 3)
     strcpy(level_name, "Difícil");
     
-  printf("Tema: %s, Level: %s, Nome: %s\n", theme_name, level_name, name);
+  printf("Tema: %s, Nível: %s, Nome: %s\n", theme_name, level_name, name);
 
 }
 
@@ -380,13 +380,13 @@ void game(char word[50], char guessed_word[50], char incorrect_letters[26], char
 
     if (is_word_guessed(word, guessed_word))
     {
-      printf("\nParabens: %s\n", word);
+      printf("\nParabéns!!! Você acertou a palavra: %s\n", word);
       break;
     }
 
     if (mistakes == 6)
     {
-      printf("\nThe word was: %s\n", word);
+      printf("\nA palavra era: %s\n", word);
       display_hangman(mistakes);
     }
   }
