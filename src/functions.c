@@ -14,11 +14,11 @@ void display_menu()
 
 void display_skull()
 {
- printf("⣴⣿⣿⣿⣿⣿⣿⣦ \n");
- printf("⣿⣿⣿⣿⣿⣿⣿⣿ \n");
- printf("⣇⠈⠉⡿⢿⠉⠁⢸ \n");
- printf("⠙⠛⢻⣷⣾⡟⠛⠋ \n");
- printf("⠀⠀⠀⠈⠁⠀⠀⠀  \n");
+  printf("⣴⣿⣿⣿⣿⣿⣿⣦  \n");
+  printf("⣿⣿⣿⣿⣿⣿⣿⣿  \n");
+  printf("⣇⠈⠉⡿⢿⠉⠁⢸  \n");
+  printf("⠙⠛⢻⣷⣾⡟⠛⠋  \n");
+  printf("⠀⠀⠀⠈⠁⠀⠀⠀   \n");
 } 
 
 
