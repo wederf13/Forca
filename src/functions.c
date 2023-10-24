@@ -12,6 +12,16 @@ void display_menu()
   printf("--> ");
 }
 
+void display_skull()
+{
+ printf("⣴⣿⣿⣿⣿⣿⣿⣦ \n");
+ printf("⣿⣿⣿⣿⣿⣿⣿⣿ \n");
+ printf("⣇⠈⠉⡿⢿⠉⠁⢸ \n");
+ printf("⠙⠛⢻⣷⣾⡟⠛⠋ \n");
+ printf("⠀⠀⠀⠈⠁⠀⠀⠀  \n");
+} 
+
+
 void display_project_info()
 {
   printf("Essas são as informações do nosso projeto:\n");
