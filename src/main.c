@@ -12,9 +12,11 @@ int main()
   do 
   {
     display_menu();
-    if (scanf("%d", &option) != 1)
+    int input_status = scanf("%d", &option);
+    
+    if (input_status != 1 || (option < 0 || option > 2))
     {
-      printf("ERRO: Opção Inválida.\n");
+      printf(" ERRO: Opção Inválida.\n");
       while (getchar() != '\n'); // clear the input buffer
       continue;
     }
@@ -33,13 +35,13 @@ int main()
           display_play_again_message();
           if (scanf("%d", &play_again) != 1)
           {
-            printf("ERRO: Opção Inválida.\n");
+            printf(" ERRO: Opção Inválida.\n");
             while (getchar() != '\n'); // clear the input buffer
             continue;
           }
 
           if (play_again != 1 && play_again != 2)
-            printf("ERRO: Opção Inválida.\n");
+            printf(" ERRO: Opção Inválida.\n");
         }
         while (play_again != 1 && play_again != 2);
 
@@ -65,7 +67,7 @@ int main()
       {
         if (option != 0)
         {
-          printf("ERRO: Opção Inválida.\n");
+          printf(" ERRO: Opção Inválida.\n");
         }
       }
     }
