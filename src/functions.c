@@ -385,13 +385,11 @@ void game(char word[50], char guessed_word[50], char incorrect_letters[26], char
 
     if (mistakes == 6)
     {
-      printf("\nA palavra era: %s\n", word);
+	    system("clear");
+      printf("\nVocê Perdeu!!! A palavra era: %s\n", word);
       display_hangman(mistakes);
     }
   }
-
-  printf("O jogo está funcionando.\n");
-  system("clear");
 }
 
 void display_play_again_message()
