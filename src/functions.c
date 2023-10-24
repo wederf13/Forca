@@ -1,6 +1,6 @@
 #include "../include/forca.h"
 
-void show_menu()
+void display_menu()
 {
   printf("1 - Jogar\n2 - Sobre o Projeto\n0 - Sair\n");
   printf("--> ");
@@ -25,17 +25,56 @@ void show_project_info()
         "11 - Makefile: O arquivo 'Makefile' faz a junção de todos os outros arquivos para o funcionamento do código.\n");
 }
 
-void show_exit_message()
+void display_exit_message()
 {
   printf("Obrigado por jogar!!!\n");
 }
 
 void read_game_data(int *theme, int *level, char name[50], char theme_name[30], char level_name[10])
 {
-  printf("Tema:\n1 - Lugares da UFG\n2 - Linguagens de Programação\n3 - CEP\n4 - PCH\n5 - Frutas\n6 - Animais\n--> ");
-  scanf("%d", theme);
-  printf("Level: \n1 - Fácil\n2 - Médio\n3 - Difícil\n--> ");
-  scanf("%d", level);
+	
+  int valid_input = 0;
+
+  while (!valid_input)
+	{
+    printf("Tema:\n1 - Lugares da UFG\n2 - Linguagens de Programação\n3 - CEP\n4 - PCH\n5 - Frutas\n6 - Animais\n--> ");
+
+    if (scanf("%d", theme) != 1) {
+      printf("ERRO: Opção Inválida. Insira um número.\n");
+      while (getchar() != '\n'); // limpa o buffer de entrada
+      continue;
+    }
+
+    if (*theme < 1 || *theme > 6) {
+      printf("ERRO: Tema Inválido. Insira um número de 1 a 6.\n");
+      continue;
+    }
+
+    system("clear");
+
+    valid_input = 1;
+  }
+
+  valid_input = 0;
+
+  while (!valid_input)
+  {
+    printf("Level: \n1 - Fácil\n2 - Médio\n3 - Difícil\n--> ");
+
+    if (scanf("%d", level) != 1) {
+      printf("ERRO: Opção Inválida. Insira um número.\n");
+      while (getchar() != '\n');
+      continue;
+    }
+
+    if (*level < 1 || *level > 3) {
+      printf("ERRO: Nível Inválido. Insira um número de 1 a 3\n");
+      continue;
+    }
+
+    valid_input = 1;
+  }
+  
   printf("Nome: ");
   scanf("%s", name);
 
@@ -97,7 +136,7 @@ void display_hangman(int mistakes)
   if (mistakes >= 6)
     strcpy(hangman[4], "  |              / \\");
 
-  for (int i = 0; i < 21; i++)
+  for (int i = 0; i < 10; i++)
     printf("%s\n", hangman[i]);
 }
 
@@ -282,12 +321,74 @@ int is_word_guessed(char word[], char guessed_word[])
     return strcmp(word, guessed_word) == 0;
 }
 
-void game()
+void game(char word[50], char guessed_word[50], char incorrect_letters[26], char name[50], char theme_name[30], char level_name[10])
 {
+  int word_length = strlen(word);
+  int mistakes = 0;
+
+  for (int i = 0; i < word_length; i++)
+    guessed_word[i] = '_';
+  guessed_word[word_length] = '\0';
+ 
+  for (int i = 0; i < 26; i++)
+    incorrect_letters[i] = 0;
+
+  display_hangman(mistakes);
+
+  while (mistakes < 6)
+  {
+    printf("\n%s\n", guessed_word);
+    
+    printf("Letras incorretas: ");
+    for (int i = 0; i < 26; i++)
+    {
+      if (incorrect_letters[i] == 1)
+        printf("%c ", 'a' + i);
+    }
+    printf("\n");
+
+    printf("--> ");
+    char guess;
+    scanf(" %c", &guess);
+    guess = tolower(guess);
+  
+    int correct = 0;
+    for (int i = 0; i < word_length; i++)
+    {
+      if (word[i] == guess)
+      {
+        guessed_word[i] = guess;
+        correct = 1;
+      }
+    }
+    if (!correct)
+    {
+      incorrect_letters[guess - 'a'] = 1;
+      mistakes++;
+    }
+    
+    system("clear");
+    printf("Tema: %s, Nível: %s, Nome: %s\n", theme_name, level_name, name);
+    display_hangman(mistakes);
+
+    if (is_word_guessed(word, guessed_word))
+    {
+      printf("\nParabens: %s\n", word);
+      break;
+    }
+
+    if (mistakes == 6)
+    {
+      printf("\nThe word was: %s\n", word);
+      display_hangman(mistakes);
+    }
+  }
+
   printf("O jogo está funcionando.\n");
+  system("clear");
 }
 
-void show_play_again_message()
+void display_play_again_message()
 {
   printf("Deseja jogar novamente?[1 - SIM / 2 - NÃO]\n");
   printf("--> ");
