@@ -3,7 +3,7 @@
 int main()
 {
   srand(time(NULL));
-  char word[50];
+  char word[50], guessed_word[50], incorrect_letters[26] = {0};
   int option, theme, level, play_again;
   char name[50];
   char theme_name[30];
@@ -11,7 +11,7 @@ int main()
 
   do 
   {
-    show_menu();
+    display_menu();
     if (scanf("%d", &option) != 1)
     {
       printf("ERRO: Opção Inválida.\n");
@@ -23,14 +23,14 @@ int main()
     {
       case 1:
       {
-        game();
+        system("clear");
         read_game_data(&theme, &level, name, theme_name, level_name);
         choose_word(level, theme, word);
-        printf("%s\n", word);
-
+        game(word, guessed_word, incorrent_letters, name, theme_name, level_name);
+        
         do
         {
-          show_play_again_message();
+          display_play_again_message();
           if (scanf("%d", &play_again) != 1)
           {
             printf("ERRO: Opção Inválida.\n");
@@ -44,20 +44,20 @@ int main()
         while (play_again != 1 && play_again != 2);
 
         if (play_again == 2)
-          show_exit_message();
+          display_exit_message();
 
         break;
       }
 
       case 2:
       {
-        show_project_info();
+        display_project_info();
         break;
       }
 
       case 0:
       {
-        show_exit_message();
+        display_exit_message();
         break;
       }
 
