@@ -64,7 +64,7 @@ void read_game_data(int *theme, int *level, char name[50], char theme_name[30], 
   int valid_input = 0;
 
   while (!valid_input)
-	{
+  {
     printf(" Tema:\n 1 - Lugares da UFG\n 2 - Linguagens de Programação\n 3 - CEP\n 4 - PCH\n 5 - Frutas\n 6 - Animais\n --> ");
 
     if (scanf("%d", theme) != 1) {
@@ -378,26 +378,26 @@ void game(char word[50], char guessed_word[50], char incorrect_letters[26], char
     }
     printf("\n");
 
-		char input[2];
+    char input[2];
     printf(" --> ");
-		scanf("%1s", input);
+    scanf("%1s", input);
     // char guess;
     // scanf(" %c", &guess);
     // guess = tolower(guess);
 	
-		if (!isalpha(input[0]))
-		{
-			printf(" ERRO: Entrada Inválida. Insira uma letra.\n");
-			continue;
-		}
+    if (!isalpha(input[0]))
+    {
+       printf(" ERRO: Entrada Inválida. Insira uma letra.\n");
+       continue;
+    }
 
-		char guess = tolower(input[0]);
+    char guess = tolower(input[0]);
 
-		if (tried_letters[guess - 'a'] == 1)
-		{
-			printf(" Você já tentou essa letra. Tente outra.\n");
-			continue;
-		}
+    if (tried_letters[guess - 'a'] == 1)
+    {
+	printf(" Você já tentou essa letra. Tente outra.\n");
+	continue;
+    }
 		
     int correct = 0;
     for (int i = 0; i < word_length; i++)
@@ -414,7 +414,7 @@ void game(char word[50], char guessed_word[50], char incorrect_letters[26], char
       mistakes++;
     }
 
-		tried_letters[guess - 'a'] = 1;
+    tried_letters[guess - 'a'] = 1;
 		
     system("clear");
     printf("\n Tema: %s, Nível: %s, Nome: %s\n", theme_name, level_name, name);
@@ -430,9 +430,9 @@ void game(char word[50], char guessed_word[50], char incorrect_letters[26], char
     if (mistakes == 6)
     {
       system("clear");
-			printf("\n");
-			display_hangman(mistakes);
-			printf("\n");
+      printf("\n");
+      display_hangman(mistakes);
+      printf("\n");
       display_skull();
       printf("\n Você Perdeu!!! A palavra era: %s\n", word);
       
