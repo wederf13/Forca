@@ -9,4 +9,9 @@ Se for utilizar Windows, instale o https://code.visualstudio.com/ e o https://gi
 
 ```bash
 Abra o seu terminal ou prompt de comando
-Navegue até o diretório e use o comando 
+Navegue até o diretório e use o comando 'git clone https://github.com/wederf13/Forca.git'
+Depois abra o VSCode.
+```
+Se for utilizar Linux, 
+
+
