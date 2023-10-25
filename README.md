@@ -5,4 +5,4 @@ Miniprojeto referente a matéria de Introdução a Programação - UFG
 
 ### Uso
 
-
+Se for utilizar Windows 
