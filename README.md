@@ -17,7 +17,7 @@ Abra o seu terminal ou prompt de comando. Navegue até o diretório e use o coma
 ```
 Depois abra a pasta no VSCode e execute o programa.
 
-ou 
+<sub>ou</sub> 
 
 Abra o VSCode e escolha a opção
 ```bash
