@@ -6,9 +6,10 @@ Este projeto foi concebido como parte do nosso trabalho acadêmico, com o propó
 
 ## Instalação 
 
-### Uso
+### Us0
+> Windows
 
-* Para **Windows**, instale:
+Instale:
 
 ```bash
 VSCode: https://code.visualstudio.com/
@@ -29,7 +30,7 @@ Clonar Repositório
 Copie o link do código e cole no espaço.
 Salve em uma pasta e abra o arquivo.
 
-* Para **Linux**,
+> Linux
 
 ## Autores
 
