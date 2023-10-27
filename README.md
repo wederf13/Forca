@@ -30,7 +30,7 @@ Clonar Repositório
 Copie o link do código e cole no espaço.
 Salve em uma pasta e abra o arquivo.
 
-## Linux
+> Linux
 
 No terminal, siga os comandos: 
 
