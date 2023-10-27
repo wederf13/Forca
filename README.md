@@ -35,9 +35,12 @@ Salve em uma pasta e abra o arquivo.
 No terminal, siga os comandos: 
 
 ```bash
-git clone https://github.com/wederf13/Forca.git
+git clone 'https://github.com/wederf13/Forca.git'
 cd Forca
 make
+```
+Para executar:
+```bash
 ./Forca
 ```
 
