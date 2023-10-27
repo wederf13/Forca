@@ -32,6 +32,15 @@ Salve em uma pasta e abra o arquivo.
 
 > Linux
 
+Instale:
+
+```bash
+git clone https://github.com/wederf13/Forca.git
+cd Forca
+make
+./Forca
+```
+
 ## Autores
 
 *
