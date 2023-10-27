@@ -37,5 +37,10 @@ Para executar:
 
 ## Autores
 
-
+1. Tiago Fonseca
+2. Rebeca França
+3. Sebastião Correa
+4. Sofia Murad
+5. Vitória Sofia
+6. Weder Filho
 
