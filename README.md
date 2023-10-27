@@ -1,4 +1,4 @@
-# Jogo-da-Forca
+# Jogo da Forca
 Miniprojeto referente a matéria de Introdução a Programação - UFG.
 
 ## Motivação 
@@ -6,7 +6,7 @@ Este projeto foi concebido como parte do nosso trabalho acadêmico, com o propó
 
 ## Instalação 
 
-### Us0
+### Uso
 > Windows
 
 Instale:
