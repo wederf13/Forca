@@ -32,7 +32,7 @@ Salve em uma pasta e abra o arquivo.
 
 > Linux
 
-Instale:
+No terminal, siga os comandos: 
 
 ```bash
 git clone https://github.com/wederf13/Forca.git
