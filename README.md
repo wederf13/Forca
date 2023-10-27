@@ -37,11 +37,5 @@ Para executar:
 
 ## Autores
 
-*
-*
-*
-*
-*
-*
 
 
