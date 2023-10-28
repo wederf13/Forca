@@ -6,7 +6,7 @@ Este projeto foi concebido como parte do nosso trabalho acadêmico, com o propó
 
 ## Instalação 
 
-#### Linux
+### Linux
 
 No terminal, siga os comandos: 
 
@@ -15,13 +15,13 @@ git clone 'https://github.com/wederf13/Forca.git'
 cd Forca
 make
 ```
-### Uso
+#### Uso
 Para executar:
 ```bash
 ./forca
 ```
 
-#### Windows
+### Windows
 Dê uma chance ao pinguim 👍.
 
 ## Autores
