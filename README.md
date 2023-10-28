@@ -6,21 +6,6 @@ Este projeto foi concebido como parte do nosso trabalho acadêmico, com o propó
 
 ## Instalação 
 
-### Uso
-#### Windows
-
-No terminal ou prompt de comando:
-```bash
-git clone https://github.com/wederf13/Forca.git
-```
-
-<sub>ou</sub> 
-
-Abra o VSCode:
-```bash
-Clonar Repositório
-```
-
 #### Linux
 
 No terminal, siga os comandos: 
@@ -30,10 +15,14 @@ git clone 'https://github.com/wederf13/Forca.git'
 cd Forca
 make
 ```
+### Uso
 Para executar:
 ```bash
-./Forca
+./forca
 ```
+
+#### Windows
+Apenas instale o linux ¯\_(ツ)_/¯
 
 ## Autores
 
