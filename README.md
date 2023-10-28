@@ -22,7 +22,7 @@ Para executar:
 ```
 
 #### Windows
-De uma chance ao pinguim 👍.
+Dê uma chance ao pinguim 👍.
 
 ## Autores
 
