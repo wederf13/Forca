@@ -22,7 +22,7 @@ Para executar:
 ```
 
 #### Windows
-Apenas instale o linux ¯\_(ツ)_/¯
+Apenas instale o linux ¯\\_(ツ)_/¯
 
 ## Autores
 
