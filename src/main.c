@@ -18,7 +18,10 @@ int main()
     {
       printf(" ERRO: Opção Inválida.\n");
       while (getchar() != '\n'); // clear the input buffer
-      continue;
+      if (option != 0)
+        continue;
+      else main();
+      break;
     }
 
     switch (option)
@@ -72,7 +75,7 @@ int main()
       }
     }
   }
-  while (option != 2 && option != 0 && play_again != 2);
+  while (option != 0 && play_again != 2);
 
   return 0;
 }
