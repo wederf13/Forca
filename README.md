@@ -22,7 +22,7 @@ Para executar:
 ```
 
 #### Windows
-Apenas instale o linux ¯\\_(ツ)_/¯
+De uma chance ao pinguim 👍.
 
 ## Autores
 
