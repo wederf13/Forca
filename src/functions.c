@@ -447,7 +447,7 @@ void game(char word[50], char guessed_word[50], char incorrect_letters[26], char
       printf("\n");
       display_hangman(mistakes);
       printf("\n");
-      display_skull();
+      display_pepe();
       printf("\n Você Perdeu!!! A palavra era: %s\n", word);
       
     }
