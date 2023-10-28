@@ -1,5 +1,6 @@
 #include "../include/forca.h"
 
+// procedure for display the menu
 void display_menu()
 {
   printf("\n");
@@ -13,15 +14,24 @@ void display_menu()
   printf(" --> ");
 }
 
-void display_skull()
+// procedure for display the defeat pepe frog
+void display_pepe()
 {
-  printf(" ⣴⣿⣿⣿⣿⣿⣿⣦  \n");
-  printf(" ⣿⣿⣿⣿⣿⣿⣿⣿  \n");
-  printf(" ⣇⠈⠉⡿⢿⠉⠁⢸  \n");
-  printf(" ⠙⠛⢻⣷⣾⡟⠛⠋  \n");
-  printf("⠀⠀  ⠈⠈⠈⠀⠀⠀  \n");
+  printf("\n");
+	printf(" ⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠿⠛⠋⠉⣉⣉⠙⠿⠋⣠⢴⣊⣙⢿⣿⣿\n");
+	printf(" ⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡿⠟⠋⠁⠀⢀⠔⡩⠔⠒⠛⠧⣾⠊⢁⣀⣀⣀⡙⣿\n");
+	printf(" ⣿⣿⣿⣿⣿⣿⣿⠟⠛⠁⠀⠀⠀⠀⠀⡡⠊⠀⠀⣀⣠⣤⣌⣾⣿⠏⠀⡈⢿⡜\n");
+	printf(" ⣿⣿⣿⠿⠛⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠡⣤⣶⠏⢁⠈⢻⡏⠙⠛⠀⣀⣁⣤⢢\n");
+	printf(" ⣿⠋⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠰⣄⡀⠣⣌⡙⠀⣘⡁⠜⠈⠑⢮⡭⠴⠚⠉⠀\n");
+	printf(" ⠁⠀⢀⠔⠁⣀⣤⣤⣤⣤⣤⣄⣀⠀⠉⠉⠉⠉⠉⠁⠀⠀⠀⠀⠀⠁⠀⢀⣠⢠\n");
+	printf(" ⡀⠀⢸⠀⢼⣿⣿⣶⣭⣭⣭⣟⣛⣛⡿⠷⠶⠶⢶⣶⣤⣤⣤⣶⣶⣾⡿⠿⣫⣾\n");
+	printf(" ⠇⠀⠀⠀⠈⠉⠉⠉⠉⠉⠙⠛⠛⠻⠿⠿⠿⠷⣶⣶⣶⣶⣶⣶⣶⣶⡾⢗⣿⣿\n");
+	printf(" ⣦⣄⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣠⣴⣿⣶⣾⣿⣿⣿\n");
+	printf(" ⣿⣿⣿⣷⣶⣤⣄⣀⣀⣀⡀⠀⠀⠀⠀⠀⠀⢀⣀⣤⣝⡻⣿⣿⣿⣿⣿⣿⣿⣿\n");
+	printf(" ⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣦⡹⣿⣿⣿⣿⣿⣿\n");
 } 
 
+// procedure for display the victory bongo cat
 void display_winner_cat()
 {
   printf("⠀⠀⠀⠀⠀⠀⠀⠀⠀⢠⣿⣶⣄⣀⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀             \n");
@@ -33,7 +43,7 @@ void display_winner_cat()
   printf("⠀⠹⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠸⣿⣿⣿⣿⣿⣿⣿⣷⠀   \n");
 }
 
-
+// procedure for display the project info
 void display_project_info()
 {
   printf("Essas são as informações do nosso projeto:\n");
@@ -58,6 +68,7 @@ void display_exit_message()
   printf("Obrigado por jogar!!!\n");
 }
 
+// procedure to read the data necessary for the game
 void read_game_data(int *theme, int *level, char name[50], char theme_name[30], char level_name[10])
 {
 	
@@ -131,6 +142,7 @@ void read_game_data(int *theme, int *level, char name[50], char theme_name[30], 
 
 }
 
+// procedure to display the hangman draw
 void display_hangman(int mistakes)
 {
   char hangman[10][21] = 
@@ -169,6 +181,7 @@ void display_hangman(int mistakes)
     printf("%s\n", hangman[i]);
 }
 
+// procedure to choose the word randomly based on levels and themes
 void choose_word(int level, int theme, char word[50])
 {
   // places list
@@ -350,6 +363,7 @@ int is_word_guessed(char word[], char guessed_word[])
     return strcmp(word, guessed_word) == 0;
 }
 
+// procedure for playing the game
 void game(char word[50], char guessed_word[50], char incorrect_letters[26], char name[50], char theme_name[30], char level_name[10])
 {
   int word_length = strlen(word);
