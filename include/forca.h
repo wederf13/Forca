@@ -20,7 +20,7 @@ void display_hangman(int mistakes);
 void choose_word(int level, int theme, char word[50]);
 void game(char word[50], char guessed_word[50], char incorrect_letters[26], char name[50], char theme_name[30], char level_name[10]);
 void display_menu();
-void display_skull();
+void display_pepe();
 void display_winner_cat();
 void display_project_info();
 void display_exit_message();
