@@ -382,8 +382,12 @@ void game(char word[50], char guessed_word[50], char incorrect_letters[26], char
 
   while (mistakes < 6)
   {
-    printf("\n %s\n", guessed_word);
-    
+    //printf("\n %s\n", guessed_word);
+    for (int i = 0; guessed_word[i] != '\0'; i++) {
+			printf(" %c", guessed_word[i]);
+		}
+		printf("\n");
+		
     printf(" Letras incorretas: ");
     for (int i = 0; i < 26; i++)
     {
