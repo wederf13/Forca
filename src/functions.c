@@ -196,7 +196,7 @@ void choose_word(int level, int theme, char word[50])
 
   // cepbr list
   char easy_cepbr[5][20] = {"goiania", "brasil", "fortaleza", "goias", "brasilia"};
-  char normal_cepbr[5][20] = {"salvador", "uberlandia", "jatai", "amazonas", "nordeste"};
+  char normal_cepbr[5][20] = {"salvador", "uberlandia", "jatai", "amazonas", "tocantins"};
   char hard_cepbr[5][20] = {"jequie", "montividiu", "pindamonhangaba", "doverlandia", "guapo"};
 
   // pch list
